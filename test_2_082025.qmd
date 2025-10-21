@@ -1,5 +1,5 @@
 ---
-title: "Visual Communication: Data Types and Plot Selection"
+title: "Categorical Data in Biomedical Research - An Overview"
 author: "<br><br><span style='font-size:25px;'><strong>Lesley Chapman Hannah, Ph.D., M.S.</strong></span><br>College of Graduate Studies<br>Northeast Ohio Medical University"
 
 format: 
