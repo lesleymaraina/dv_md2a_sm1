@@ -52,24 +52,17 @@ format:
 **Numerical Variables (Quantitative)**
 
 ::: incremental
-<<<<<<< HEAD
-  - Avoid misrepresentation (use appropriate scales)
+
   - **Choose appropriate graph** type to display your data
-=======
-- **Definition**: Represent quantities that are measurable and numeric
+
+  - **Definition**: Represent quantities that are measurable and numeric
      
       - Values capture amounts, counts, or levels that can be expressed numerically
 
-- **Values**: Numbers where mathematical operations(addition, subtraction, averaging) make sense
+  - **Values**: Numbers where mathematical operations(addition, subtraction, averaging) make sense
 
-- **Types**:
-    
-    - **Discrete**: Countable values 
-        - Number of hospital visits, number of mutations detected, number of patients enrolled
 
-    - **Continuous**: Measurable values that can take on decimals 
-        - Blood pressure, cholesterol level
->>>>>>> 0507c14 (added lecture slides)
+
 :::
 
 :::
@@ -79,7 +72,7 @@ format:
 :::
 
 
-## <span style="font-size:80%">Making Sense of Variables: Categorical vs. Numerical</span> {.smaller}
+## <span style="font-size:60%">Making Sense of Variables: Categorical vs. Numerical</span> {.smaller}
 
 ::: columns
 
@@ -87,16 +80,20 @@ format:
 **Categorical Variables (Qualitative)**
 
 ::: incremental
+  - **Types**:
+    
+    - **Discrete**: Countable values 
+        - Number of hospital visits, number of mutations detected, number of patients enrolled
+
+    - **Continuous**: Measurable values that can take on decimals 
+        - Blood pressure, cholesterol level
+        
 - **Utility**: Can count frequencies, mode, or proportions
-      
-      - Classify patients, samples, or conditions into distinct categories rather than measuring a numerical quantity
       - N.B.: no meaningful mathematical operations - add, subtract, or average
 
 - **Examples**:
     
     - Blood type: A, B, AB, O
-    - Cancer stage: Stage I, Stage II, Stage III, Stage IV
-    - Genetic variant: Present / Absent
 
 :::
 :::
@@ -343,100 +340,8 @@ Three properties of categorical variables
 ::: footer
 :::
 
-<<<<<<< HEAD
 
-## 
-
-<br>
-
-Research Question $\rightarrow$ Data $\rightarrow$ **Graph**
-
-::: footer
-:::
-
-
-## Visual Encoding of Data
-
-
-::: columns
-::: {.column width="60%"}
-
-:::
-
-::: {.column width="30%"}
-
-:::
-
-
-:::
-::: footer
-:::
-
-
-
-
-
-## Visual Encoding of Data
-
-
-::: columns
-::: {.column width="60%"}
-![](images/categorical_data.png){.border .border-thick}
-:::
-
-::: {.column width="30%"}
-
-:::
-
-<span style="font-size:60%">O’Donoghue, S. et. al. (2018) [adapted]</span>
-:::
-::: footer
-:::
-
-
-## Visual Encoding of Data
-
-
-::: columns
-::: {.column width="60%"}
-![](images/connectivity.png){.border .border-thick}
-:::
-
-::: {.column width="30%"}
-
-:::
-
-<span style="font-size:60%">O’Donoghue, S. et. al. (2018) [adapted]</span>
-:::
-::: footer
-:::
-
-
-
-
-## Visual Encoding of Data
-
-
-::: columns
-::: {.column width="40%"}
-![](images/quant_data.png){.border .border-thick}
-:::
-
-::: {.column width="60%"}
-
-:::
-
-<span style="font-size:60%">O’Donoghue, S. et. al. (2018) [adapted]</span>
-:::
-::: footer
-:::
-
-
-## Graphs
-
-=======
 ## <span style="font-size:80%">Properties of categorical variables</span> {.smaller}
->>>>>>> 0507c14 (added lecture slides)
 
 ::: columns
 
@@ -458,6 +363,7 @@ Determines whether an observation (i.e.: patient, gene, tissue sample etc.) can 
 ::: footer
 :::
 
+
 ## <span style="font-size:80%">Properties of categorical variables</span> {.smaller}
 
 ::: columns
@@ -468,17 +374,16 @@ Determines whether an observation (i.e.: patient, gene, tissue sample etc.) can 
 
 ::: incremental
 
-- **Single-label (mutually exclusive comparison)** 
+Single-label 
+
+- Comparison of disjointed groups
+- Patients or samples are classified into one group only
+
+- Examples:
   
-  - Comparison of disjointed groups
-  - Patients or samples are classified into one group only
-
-
-  - Examples:
-      
-      - Disease stage (I, II, III, IV)
-      - Blood type (A, B, AB, O)
-      - Clinical trial arm (treatment vs. control)
+  - Disease stage (I, II, III, IV)
+  - Blood type (A, B, AB, O)
+  - Clinical trial arm (treatment vs. control)
 
 
 :::
@@ -492,10 +397,6 @@ Determines whether an observation (i.e.: patient, gene, tissue sample etc.) can 
 :::
 
 
-
-
-
-
 ## <span style="font-size:80%">Properties of categorical variables</span> {.smaller}
 
 ::: columns
@@ -506,16 +407,13 @@ Determines whether an observation (i.e.: patient, gene, tissue sample etc.) can 
 
 ::: incremental
 
-- **Single-label (mutually exclusive comparison)** 
-  
-  - Summarize and display data
+Single-label (mutually exclusive comparison)
 
+Plot Examples
 
-  - Plot examples:
-      
-      - Bar charts → show proportions across disjoint groups
-      - Kaplan-Meier survival curves → one curve per exclusive group
-      
+  - Bar charts → show proportions across disjoint groups
+  - Kaplan-Meier survival curves → one curve per exclusive group
+
 :::
 :::
 ::: {.column width="0%"}
@@ -536,16 +434,17 @@ Determines whether an observation (i.e.: patient, gene, tissue sample etc.) can 
 
 ::: incremental
 
-- **Multi-label (non-exclusive)** 
-  
+Multi-label 
+
   - Patients/samples may belong to multiple categories at once
   - Biomedical datasets are often multi-label in practice, since diseases and molecular features overlap
-  - **Examples**:
-      
-      - Comorbidities (diabetes + hypertension + COPD)
-      - Mutational profiles (TP53 + KRAS + EGFR)
-      - Symptoms (fever + cough + fatigue)
-      
+  - Examples :
+
+    - Comorbidities (diabetes + hypertension + COPD)
+    - Mutational profiles (TP53 + KRAS + EGFR)
+    - Symptoms (fever + cough + fatigue)
+
+
 :::
 :::
 ::: {.column width="0%"}
@@ -555,6 +454,7 @@ Determines whether an observation (i.e.: patient, gene, tissue sample etc.) can 
 :::
 ::: footer
 :::
+
 
 ## <span style="font-size:80%">Properties of categorical variables</span> {.smaller}
 
@@ -566,18 +466,13 @@ Determines whether an observation (i.e.: patient, gene, tissue sample etc.) can 
 
 ::: incremental
 
-- Summarize and display data
+Multi-label 
 
-- **Plot Examples** 
-  
-  - Patients/samples may belong to multiple categories at once
-  - Biomedical datasets are often multi-label in practice, since diseases and molecular features overlap
-  
-  - **Examples**:
-      
-      - Venn diagrams / UpSet plots → visualize overlaps between categories
-      - Heatmaps → patients × features (mutations, symptoms, comorbidities)
-      
+Example Plots
+
+- Venn diagrams / UpSet plots → visualize overlaps between categories
+- Heatmaps → patients × features (mutations, symptoms, comorbidities)
+
 :::
 :::
 ::: {.column width="0%"}
@@ -588,28 +483,7 @@ Determines whether an observation (i.e.: patient, gene, tissue sample etc.) can 
 ::: footer
 :::
 
-<<<<<<< HEAD
-## Tools of the trade
 
-
-::: columns
-::: {.column width="90%"}
-![](images/tools_trade.png){.border .border-thick}
-:::
-
-::: {.column width="10%"}
-
-:::
-
-:::
-::: footer
-:::
-
-
-
-## Guidance on Improving visual communication
-=======
->>>>>>> 0507c14 (added lecture slides)
 
 ## <span style="font-size:80%">Summary</span> {.smaller}
 
@@ -618,21 +492,20 @@ Determines whether an observation (i.e.: patient, gene, tissue sample etc.) can 
 ::: {.column width="100%"}
 
 
-
 ::: incremental
 
-- **Definition & role:**
+- **Definition & role:** 
 
   - Categorical variables classify patients/samples (not numeric scales) 
   - Summarized to show counts/percentages or group relationships
   
 - **Type drives interpretation**
-
+ 
   - Binary (yes/no)
   - Nominal (unordered classes)
   - Ordinal (ordered severity or stage)
 
-      
+
 :::
 :::
 ::: {.column width="0%"}
@@ -644,7 +517,6 @@ Determines whether an observation (i.e.: patient, gene, tissue sample etc.) can 
 :::
 
 
-
 ## <span style="font-size:80%">Summary</span> {.smaller}
 
 ::: columns
@@ -652,10 +524,9 @@ Determines whether an observation (i.e.: patient, gene, tissue sample etc.) can 
 ::: {.column width="100%"}
 
 
-
 ::: incremental
 
-- **Cardinality matters: **
+- **Cardinality matters: ** 
 
   - Low (e.g., smoking status)
   - Medium (cancer types)
@@ -667,7 +538,6 @@ Determines whether an observation (i.e.: patient, gene, tissue sample etc.) can 
   - Single-label: compare disjoint groups (e.g., bar charts; survival curves with one line per group)
   - Multi-label: show overlaps or patterns (e.g., Venn/UpSet for intersections)
 
-      
 :::
 :::
 ::: {.column width="0%"}
@@ -677,6 +547,3 @@ Determines whether an observation (i.e.: patient, gene, tissue sample etc.) can 
 :::
 ::: footer
 :::
-
-
-
