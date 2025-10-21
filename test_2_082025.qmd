@@ -1,10 +1,6 @@
 ---
-<<<<<<< HEAD
 title: "Visual Communication: Data Types and Plot Selection"
-=======
-title: "Categorical Data in Biomedical Research - An Overview"
->>>>>>> 0507c14 (added lecture slides)
-author: "Lesley Chapman Hannah, Ph.D., M.S.<br>College of Graduate Studies<br>Northeast Ohio Medical University"
+author: "<br><br><span style='font-size:25px;'><strong>Lesley Chapman Hannah, Ph.D., M.S.</strong></span><br>College of Graduate Studies<br>Northeast Ohio Medical University"
 
 format: 
   revealjs:
