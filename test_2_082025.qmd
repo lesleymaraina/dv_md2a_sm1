@@ -1,0 +1,686 @@
+---
+<<<<<<< HEAD
+title: "Visual Communication: Data Types and Plot Selection"
+=======
+title: "Categorical Data in Biomedical Research - An Overview"
+>>>>>>> 0507c14 (added lecture slides)
+author: "Lesley Chapman Hannah, Ph.D., M.S.<br>College of Graduate Studies<br>Northeast Ohio Medical University"
+
+format: 
+  revealjs:
+    #theme: solarized
+    css: style.css
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/Flame.jpg
+    #css: styles.css
+    
+---
+
+## Lecure Overview
+
+::: incremental
+- Brief background on categorical and numerical variables
+- Categorical data definition
+- Types of categorical data
+- Properties of categorical variables
+:::
+::: footer
+:::
+
+## <span style="font-size:80%">Making Sense of Variables: Categorical vs. Numerical</span> {.smaller}
+
+
+::: columns
+
+::: {.column width="50%"}
+**Categorical Variables (Qualitative)**
+
+::: incremental
+- **Definition**: Descriptors of qualities or categories of data
+    
+    - Represent labels, names, or groups
+
+
+- **Values**: 
+    
+    - Text 
+    - Numbers 
+      - May appear as text or numbers, but the numbers act as identifiers, not quantities (i.e.: patient IDs, patient ZIP codes)
+:::
+:::
+
+::: {.column width="50%"}
+**Numerical Variables (Quantitative)**
+
+::: incremental
+<<<<<<< HEAD
+  - Avoid misrepresentation (use appropriate scales)
+  - **Choose appropriate graph** type to display your data
+=======
+- **Definition**: Represent quantities that are measurable and numeric
+     
+      - Values capture amounts, counts, or levels that can be expressed numerically
+
+- **Values**: Numbers where mathematical operations(addition, subtraction, averaging) make sense
+
+- **Types**:
+    
+    - **Discrete**: Countable values 
+        - Number of hospital visits, number of mutations detected, number of patients enrolled
+
+    - **Continuous**: Measurable values that can take on decimals 
+        - Blood pressure, cholesterol level
+>>>>>>> 0507c14 (added lecture slides)
+:::
+
+:::
+
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Making Sense of Variables: Categorical vs. Numerical</span> {.smaller}
+
+::: columns
+
+::: {.column width="50%"}
+**Categorical Variables (Qualitative)**
+
+::: incremental
+- **Utility**: Can count frequencies, mode, or proportions
+      
+      - Classify patients, samples, or conditions into distinct categories rather than measuring a numerical quantity
+      - N.B.: no meaningful mathematical operations - add, subtract, or average
+
+- **Examples**:
+    
+    - Blood type: A, B, AB, O
+    - Cancer stage: Stage I, Stage II, Stage III, Stage IV
+    - Genetic variant: Present / Absent
+
+:::
+:::
+
+::: {.column width="50%"}
+**Numerical Variables (Quantitative)**
+
+::: incremental
+- **Utility**: Allows for a wide range of statistical analyses, including: measures of central tendency (mean, median), variability (standard deviation), and associations (correlation, regression)
+
+- **Examples**:
+    
+    - White blood cell count (cells/µL)
+    - Serum glucose level (mg/dL)
+    - Tumor size (cm)
+:::
+:::
+:::
+::: footer
+:::
+
+## <span style="font-size:80%">Making Sense of Variables: Categorical vs. Numerical</span> {.smaller}
+
+::: columns
+
+::: {.column width="50%"}
+<span style="color:#d46f50; font-weight:bold;">Categorical Variables (Qualitative)</span>
+
+::: incremental
+
+
+:::
+:::
+
+::: {.column width="50%"}
+**Numerical Variables (Quantitative)**
+
+::: incremental
+
+:::
+:::
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Definition: Categorical Data</span> {.smaller}
+
+::: columns
+
+::: {.column width="100%"}
+::: incremental
+
+- Variables that represent discrete groups, classes, or categories, rather than numeric values 
+
+- **No inherent numeric meaning**: 
+  
+  - The numbers may represent codes but do not imply order or magnitude unless explicitly ordinal.
+  - Variables that have an inherent or coded magnitude
+
+- **Discrete values**: Each observation belongs to one (or more) categories
+  
+  - Categorical data is visualized to compare frequencies, proportions, or relationships between groups
+
+- **Single-label or multi-label**
+  
+  - Observations may belong to one category (exclusive) or multiple categories (non-exclusive)
+
+- In biomedical research these values describe characteristics, conditions, or classifications of patients, samples, or biological entities
+:::
+:::
+::: {.column width="0%"}
+::: incremental
+:::
+:::
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Definition: Categorical Data</span> {.smaller}
+
+::: columns
+
+::: {.column width="100%"}
+
+Three properties of categorical variables
+
+::: incremental
+
+- Type (i.e.: binary / nominal / ordinal)
+- Cardinality (i.e.: number of distinct categories)
+- Exclusivity (i.e.: single vs. multi-label)
+
+:::
+:::
+::: {.column width="0%"}
+::: incremental
+:::
+:::
+:::
+::: footer
+:::
+
+
+
+## <span style="font-size:80%">Properties of categorical variables</span> {.smaller}
+
+::: columns
+
+::: {.column width="100%"}
+
+**Type (binary / nominal / ordinal)**
+
+::: incremental
+
+- Defines the scale of the variable and what operations make sense
+- Example: Ordinal supports ordering comparisons, nominal does not
+:::
+:::
+::: {.column width="0%"}
+::: incremental
+:::
+:::
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Properties of categorical variables</span> {.smaller}
+
+::: columns
+
+::: {.column width="100%"}
+
+**Type (binary / nominal / ordinal)**
+
+::: incremental
+
+- **Binary**: Two categories
+
+  - Example: Disease status (Yes/No), Gender (Male/Female)
+
+
+- **Nominal**: More than two categories with no order
+
+  - Example: Blood type (A, B, AB, O), Tissue type (liver, kidney, lung)
+
+
+- **Ordinal**: Categories with a natural order
+
+  - Example: Cancer stage (I, II, III, IV), Pain severity (mild, moderate, severe)
+
+:::
+:::
+::: {.column width="0%"}
+::: incremental
+:::
+:::
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Properties of categorical variables</span> {.smaller}
+
+::: columns
+
+::: {.column width="100%"}
+
+**Cardinality (number of distinct categories)**
+
+::: incremental
+
+- Number of unique values (categories or labels) that a categorical variable can take
+- Count of distinct categories in a variable
+- Can help determine whether factors such as grouping or dimensionality reduction is appropriate
+:::
+:::
+::: {.column width="0%"}
+::: incremental
+:::
+:::
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Properties of categorical variables</span> {.smaller}
+
+::: columns
+
+::: {.column width="100%"}
+
+**Cardinality (number of distinct categories)**
+
+::: incremental
+
+- Low cardinality
+- Medium cardinality
+- High cardinality
+
+:::
+:::
+::: {.column width="0%"}
+::: incremental
+:::
+:::
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Properties of categorical variables</span> {.smaller}
+
+::: columns
+
+::: {.column width="100%"}
+
+**Cardinality (number of distinct categories)**
+
+::: incremental
+
+- **Low cardinality**:
+  
+  - Smoking status → [Current, Former, Never]: 3 levels
+
+- **Medium cardinality**:
+  
+  - Cancer type → [Breast, Lung, Colorectal, Prostate] :  ~10-20 levels
+
+- **High cardinality**:
+
+  - Patient ID → each patient is unique → thousands of categories
+  - Genetic mutation identifiers → potentially tens of thousands of distinct variants 
+
+:::
+:::
+::: {.column width="0%"}
+::: incremental
+:::
+:::
+:::
+::: footer
+:::
+
+<<<<<<< HEAD
+
+## 
+
+<br>
+
+Research Question $\rightarrow$ Data $\rightarrow$ **Graph**
+
+::: footer
+:::
+
+
+## Visual Encoding of Data
+
+
+::: columns
+::: {.column width="60%"}
+
+:::
+
+::: {.column width="30%"}
+
+:::
+
+
+:::
+::: footer
+:::
+
+
+
+
+
+## Visual Encoding of Data
+
+
+::: columns
+::: {.column width="60%"}
+![](images/categorical_data.png){.border .border-thick}
+:::
+
+::: {.column width="30%"}
+
+:::
+
+<span style="font-size:60%">O’Donoghue, S. et. al. (2018) [adapted]</span>
+:::
+::: footer
+:::
+
+
+## Visual Encoding of Data
+
+
+::: columns
+::: {.column width="60%"}
+![](images/connectivity.png){.border .border-thick}
+:::
+
+::: {.column width="30%"}
+
+:::
+
+<span style="font-size:60%">O’Donoghue, S. et. al. (2018) [adapted]</span>
+:::
+::: footer
+:::
+
+
+
+
+## Visual Encoding of Data
+
+
+::: columns
+::: {.column width="40%"}
+![](images/quant_data.png){.border .border-thick}
+:::
+
+::: {.column width="60%"}
+
+:::
+
+<span style="font-size:60%">O’Donoghue, S. et. al. (2018) [adapted]</span>
+:::
+::: footer
+:::
+
+
+## Graphs
+
+=======
+## <span style="font-size:80%">Properties of categorical variables</span> {.smaller}
+>>>>>>> 0507c14 (added lecture slides)
+
+::: columns
+
+::: {.column width="100%"}
+
+**Exclusivity (single vs. multi-label)**
+
+::: incremental
+
+Determines whether an observation (i.e.: patient, gene, tissue sample etc.) can belong to only one category (single-label) or multiple categories simultaneously (multi-label)
+
+:::
+:::
+::: {.column width="0%"}
+::: incremental
+:::
+:::
+:::
+::: footer
+:::
+
+## <span style="font-size:80%">Properties of categorical variables</span> {.smaller}
+
+::: columns
+
+::: {.column width="100%"}
+
+**Exclusivity (single vs. multi-label)**
+
+::: incremental
+
+- **Single-label (mutually exclusive comparison)** 
+  
+  - Comparison of disjointed groups
+  - Patients or samples are classified into one group only
+
+
+  - Examples:
+      
+      - Disease stage (I, II, III, IV)
+      - Blood type (A, B, AB, O)
+      - Clinical trial arm (treatment vs. control)
+
+
+:::
+:::
+::: {.column width="0%"}
+::: incremental
+:::
+:::
+:::
+::: footer
+:::
+
+
+
+
+
+
+## <span style="font-size:80%">Properties of categorical variables</span> {.smaller}
+
+::: columns
+
+::: {.column width="100%"}
+
+**Exclusivity (single vs. multi-label)**
+
+::: incremental
+
+- **Single-label (mutually exclusive comparison)** 
+  
+  - Summarize and display data
+
+
+  - Plot examples:
+      
+      - Bar charts → show proportions across disjoint groups
+      - Kaplan-Meier survival curves → one curve per exclusive group
+      
+:::
+:::
+::: {.column width="0%"}
+::: incremental
+:::
+:::
+:::
+::: footer
+:::
+
+## <span style="font-size:80%">Properties of categorical variables</span> {.smaller}
+
+::: columns
+
+::: {.column width="100%"}
+
+**Exclusivity (single vs. multi-label)**
+
+::: incremental
+
+- **Multi-label (non-exclusive)** 
+  
+  - Patients/samples may belong to multiple categories at once
+  - Biomedical datasets are often multi-label in practice, since diseases and molecular features overlap
+  - **Examples**:
+      
+      - Comorbidities (diabetes + hypertension + COPD)
+      - Mutational profiles (TP53 + KRAS + EGFR)
+      - Symptoms (fever + cough + fatigue)
+      
+:::
+:::
+::: {.column width="0%"}
+::: incremental
+:::
+:::
+:::
+::: footer
+:::
+
+## <span style="font-size:80%">Properties of categorical variables</span> {.smaller}
+
+::: columns
+
+::: {.column width="100%"}
+
+**Exclusivity (single vs. multi-label)**
+
+::: incremental
+
+- Summarize and display data
+
+- **Plot Examples** 
+  
+  - Patients/samples may belong to multiple categories at once
+  - Biomedical datasets are often multi-label in practice, since diseases and molecular features overlap
+  
+  - **Examples**:
+      
+      - Venn diagrams / UpSet plots → visualize overlaps between categories
+      - Heatmaps → patients × features (mutations, symptoms, comorbidities)
+      
+:::
+:::
+::: {.column width="0%"}
+::: incremental
+:::
+:::
+:::
+::: footer
+:::
+
+<<<<<<< HEAD
+## Tools of the trade
+
+
+::: columns
+::: {.column width="90%"}
+![](images/tools_trade.png){.border .border-thick}
+:::
+
+::: {.column width="10%"}
+
+:::
+
+:::
+::: footer
+:::
+
+
+
+## Guidance on Improving visual communication
+=======
+>>>>>>> 0507c14 (added lecture slides)
+
+## <span style="font-size:80%">Summary</span> {.smaller}
+
+::: columns
+
+::: {.column width="100%"}
+
+
+
+::: incremental
+
+- **Definition & role:**
+
+  - Categorical variables classify patients/samples (not numeric scales) 
+  - Summarized to show counts/percentages or group relationships
+  
+- **Type drives interpretation**
+
+  - Binary (yes/no)
+  - Nominal (unordered classes)
+  - Ordinal (ordered severity or stage)
+
+      
+:::
+:::
+::: {.column width="0%"}
+::: incremental
+:::
+:::
+:::
+::: footer
+:::
+
+
+
+## <span style="font-size:80%">Summary</span> {.smaller}
+
+::: columns
+
+::: {.column width="100%"}
+
+
+
+::: incremental
+
+- **Cardinality matters: **
+
+  - Low (e.g., smoking status)
+  - Medium (cancer types)
+  - High (mutation IDs) influences grouping/lumping decisions before plotting
+
+  
+- **Exclusivity shapes the display:**
+
+  - Single-label: compare disjoint groups (e.g., bar charts; survival curves with one line per group)
+  - Multi-label: show overlaps or patterns (e.g., Venn/UpSet for intersections)
+
+      
+:::
+:::
+::: {.column width="0%"}
+::: incremental
+:::
+:::
+:::
+::: footer
+:::
+
+
+
