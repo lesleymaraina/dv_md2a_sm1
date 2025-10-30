@@ -80,13 +80,11 @@ format:
 **Categorical Variables (Qualitative)**
 
 ::: incremental
-  - **Types**:
+  - **Type(s)**:
     
     - **Discrete**: Countable values 
         - Number of hospital visits, number of mutations detected, number of patients enrolled
 
-    - **Continuous**: Measurable values that can take on decimals 
-        - Blood pressure, cholesterol level
         
 - **Utility**: Can count frequencies, mode, or proportions
       - N.B.: no meaningful mathematical operations - add, subtract, or average
@@ -235,7 +233,7 @@ Three properties of categorical variables
 
 - **Binary**: Two categories
 
-  - Example: Disease status (Yes/No), Gender (Male/Female)
+  - Example: Disease status (Yes/No)
 
 
 - **Nominal**: More than two categories with no order
